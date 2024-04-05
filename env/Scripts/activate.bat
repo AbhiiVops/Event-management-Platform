@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\Abhishek\Desktop\Codenicely-assignment\events_management_platform\env
+set VIRTUAL_ENV=C:\Users\Abhishek\Desktop\C-assignment\events_management_platform\env
 
 if not defined PROMPT set PROMPT=$P$G
 
