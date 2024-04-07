@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import path, include
 from django.contrib.staticfiles.urls import static, staticfiles_urlpatterns
 
-from .views import dashboard, login_page, logut_page
+from .views import dashboard, login_page, logut_page, RegisterPage, forgot_page
 from . import settings
 
 urlpatterns = [
@@ -28,6 +28,8 @@ urlpatterns = [
     path('logout/', logut_page, name='logout'),
     path('events/', include('events.urls')),
     path('ckeditor/', include('ckeditor_uploader.urls')),
+    path('login/register.html/', RegisterPage, name='register'),
+    path('login/forgot-password.html/', forgot_page, name='forgot')
 ]
 
 urlpatterns += staticfiles_urlpatterns()

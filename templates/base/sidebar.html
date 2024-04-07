@@ -16,7 +16,7 @@
           <img src="{% static 'img/userimage.jpg' %}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Abhishek Bhattacharjee</a>
+          <a href="#" class="d-block">{{ request.user.username }}</a>
         </div>
       </div>
 
