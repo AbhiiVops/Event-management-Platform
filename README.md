@@ -1,4 +1,17 @@
-# Event Management System.
+# Community Events Management Platform
+
+Welcome to the Community Events Management Platform! This platform allows users to manage community events, including registration, creation, updating, deletion, and RSVP functionalities.
+
+## Snapshot of the project:
+
+![Snapshot of the project](images\dashboard.png)
+
+# Table of Contents
+1. [Setup](#step-by-step-instructions-for-setting-up-the-project-locally)
+2. [User Interaction Guide](#user-interaction-guide)
+3. [Project Structure Overview](#project-structure-overview)
+4. [Required Packages and versions](#required-packages-and-versions)
+5. [Acknowledgements](#acknowledgments)
 
 # Step-by-step instructions for setting up the project locally
 
@@ -6,59 +19,97 @@
 Step 1:
     Clone This Project
 
-        $ git clone https://github.com/AbhiiVops/Event-management-Platform.git
+        git clone https://github.com/AbhiiVops/Event-management-Platform.git
 
 Step 2:
     Go to Project Directory
 
-        $ cd django-event-management
+        cd django-event-management
 
 Step 3:
     Create a Virtual Environment
 
-        $ python3 -m venv env
+        python3 -m venv env
 
 Step 4:
     Activate Virtual Environment
 
-        $ source env/bin/activate
+        source env/bin/activate
 
 Step 5:
     Install Requirements Package
 
-        $ pip install -r requirements.txt
+        pip install -r requirements.txt
 
 Step 6:
     Migrate Database
 
-        $ python manage.py migrate
+        python manage.py migrate
 
 Step 7:
     Create Super User
 
-        $ python manage.py createsuperuser
+        python manage.py createsuperuser
+
+💡**Note:** *The default superuser with the username : `admin` and password : `admin` already exists. Create a new username and password.*
 
 Step 8:
     Finally Run The Project
 
-        $ python manage.py runserver
+        python manage.py runserver
 
 
 # User Interaction Guide
 
-Learn how to perform various user interactions with the Event Management Platform:
+The following video shows how to perform various user interactions with the Event Management Platform:
+
+Link to video: **https://youtu.be/Qc4RLWHdtgw**
 
 1. **Registration**: Register for an account to access the platform's features.
 2. **Login**: Log in to your account to manage events.
 3. **Event Management**: Create, update, delete, and view events.
 4. **RSVP**: RSVP to events and view RSVP status.
 
+### Registration
+
+- Navigate to the registration page.
+- Fill in the required information and submit the form to get access to the platform.
+- After successful registration, you will be redirected to the login page. You can now log in to your account
+
+![Snapshot of the project](images\registeration.png)
+
+### Login
+
+- Navigate to the login page.
+- Enter your username and password and click on sign in.
+
+![Snapshot of the project](images\login.png)
+
+### Create Category
+
+- In the sidebar, choose the "Create Category" option.
+- Fill in the required information and submit the form.
+
+![Snapshot of the project](images\Create_Event_Category.png)
+
+### Create Event
+
+- In the sidebar, choose the "Create Event" option.
+- Fill in the required information and submit the form.
+
+![Snapshot of the project](images\create_event.png)
+
+### Update/Delete Event
+
+- In the sidebar, go to the "Events List" option.
+- In the event list, in the action box select the "edit" option for edit and "delete" option for delete.
+
+![Snapshot of the project](images\update_delete_event.png)
+
 # Project Structure Overview
 
-Understand the structure of the Event Management Platform project:
-
-## Apps
-- **events**: This app is responsible for managing events. It includes functionalities for creating, updating, deleting, and viewing events.
+## App
+- **events**: This app is responsible for managing events. It includes functionalities for creating, updating, deleting, and viewing events, as well as many other features.
 
 ## Models
 - **Event**: Represents an event with attributes such as title, description, date, time, location, organizer details, and RSVP option.
@@ -76,6 +127,18 @@ Understand the structure of the Event Management Platform project:
 ## Configuration Files
 - **settings.py**: Contains project-wide settings such as database configuration, static files configuration, and security settings.
 - **urls.py**: Defines URL patterns and routes requests to appropriate views.
+
+### In Short:
+
+  - `community_events_management/`: Main project directory.
+  - `events/`: Django app for managing events.
+  - `templates/`: HTML templates.
+  - `static/`: Static files (CSS, JavaScript, images).
+  - `media/`: Uploaded files (event images, etc.).
+  - `settings.py`: Django project settings.
+  - `urls.py`: URL routing configuration.
+  - `manage.py`: Django management script.
+
 
 
 # Required Packages and Versions
@@ -176,7 +239,7 @@ The project requires the following Python packages and versions:
 
 # Acknowledgments
 
-* The project is developed by *Abhishek Bhattacharjee*.
+* The project is developed by **Abhishek Bhattacharjee**.
 * This project covers the features of Event Management System.
 * The project has been developed using monolithic approach.
 * The project is developed using Django, a high-level Python web framework that encourages rapid development and clean, pragmatic design.
