@@ -4,7 +4,7 @@ Welcome to the Community Events Management Platform! This platform allows users 
 
 ## Snapshot of the project:
 
-![Snapshot of the project](images\dashboard.png)
+<img src="images\dashboard.png" width="700" alt="Dashboard">
 
 # Table of Contents
 1. [Setup](#step-by-step-instructions-for-setting-up-the-project-locally)
@@ -15,7 +15,6 @@ Welcome to the Community Events Management Platform! This platform allows users 
 
 # Step-by-step instructions for setting up the project locally
 
-    
 Step 1:
     Clone This Project
 
@@ -34,7 +33,11 @@ Step 3:
 Step 4:
     Activate Virtual Environment
 
+      For Linux:
         source env/bin/activate
+
+      For Windows:
+        .\env\Scripts\activate  
 
 Step 5:
     Install Requirements Package
@@ -76,35 +79,35 @@ Link to video: **https://youtu.be/Qc4RLWHdtgw**
 - Fill in the required information and submit the form to get access to the platform.
 - After successful registration, you will be redirected to the login page. You can now log in to your account
 
-![Snapshot of the project](images\registeration.png)
+<img src="images\registeration.png" width="700" alt="Registration Page">
 
 ### Login
 
 - Navigate to the login page.
 - Enter your username and password and click on sign in.
 
-![Snapshot of the project](images\login.png)
+<img src="images\login.png" width="700" alt="Login Page">
 
 ### Create Category
 
 - In the sidebar, choose the "Create Category" option.
 - Fill in the required information and submit the form.
 
-![Snapshot of the project](images\Create_Event_Category.png)
+<img src="images\Create_Event_Category.png" width="700" alt="Create-Event-Category Page">
 
 ### Create Event
 
 - In the sidebar, choose the "Create Event" option.
 - Fill in the required information and submit the form.
 
-![Snapshot of the project](images\create_event.png)
+<img src="images\create_event.png" width="700" alt="create-event Page">
 
 ### Update/Delete Event
 
 - In the sidebar, go to the "Events List" option.
 - In the event list, in the action box select the "edit" option for edit and "delete" option for delete.
 
-![Snapshot of the project](images\update_delete_event.png)
+<img src="images\update_delete_event.png" width="700" alt="update_delete_event Page">
 
 # Project Structure Overview
 
@@ -236,6 +239,10 @@ The project requires the following Python packages and versions:
 - wcwidth==0.2.13
 - webencodings==0.5.1
 - yarg==0.1.9
+
+# Deployment on AWS EC2 instance 
+
+<img src="images\deployment_on_ec2.png" width="700" alt="deployment_on_ec2">
 
 # Acknowledgments
 
